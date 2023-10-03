@@ -1,0 +1,40 @@
+//sass --watch FormComponent.scss output.css
+$primary-color: #DD0031;
+$spec: 4px solid red;
+
+.form-container {
+    width: 80%;
+    margin: 32px auto;
+
+    .doc-form__title {
+        margin-top: 32px;
+    }
+
+    .variant__types {
+        margin: 32px 0;
+    }
+    
+    .doc-fields__container {
+        width: 650px;
+    
+        .doc-form__prop-item {
+            display: flex;
+            align-items: flex-end;
+        }
+    
+        .input__form {
+            margin-top: 16px;
+            margin-right: 16px;
+        }
+    
+        .doc-form__btn {
+            padding: 12px 24px;
+        }
+    
+        .form-btn {
+            align-self: flex-end;
+            margin-top: 16px;
+        }
+    
+    } 
+}

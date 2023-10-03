@@ -1,0 +1,30 @@
+.form-container {
+  width: 80%;
+  margin: 32px auto;
+}
+.form-container .doc-form__title {
+  margin-top: 32px;
+}
+.form-container .variant__types {
+  margin: 32px 0;
+}
+.form-container .doc-fields__container {
+  width: 650px;
+}
+.form-container .doc-fields__container .doc-form__prop-item {
+  display: flex;
+  align-items: flex-end;
+}
+.form-container .doc-fields__container .input__form {
+  margin-top: 16px;
+  margin-right: 16px;
+}
+.form-container .doc-fields__container .doc-form__btn {
+  padding: 12px 24px;
+}
+.form-container .doc-fields__container .form-btn {
+  align-self: flex-end;
+  margin-top: 16px;
+}
+
+/*# sourceMappingURL=output.css.map */
