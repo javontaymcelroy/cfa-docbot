@@ -1,40 +1,60 @@
-//sass --watch FormComponent.scss output.css
-$primary-color: #DD0031;
-$spec: 4px solid red;
+$cfa-red: #DD0031;
+$cfa-blue: #004F71;
+$cfa-white: #FFFFFF;
+$cfa-border: 1.5px solid #ECEDEE;
+$cfa-grey: #F2F3F4;
 
-.form-container {
-    width: 80%;
-    margin: 32px auto;
+$elevation1: drop-shadow(0px 2px 4px rgba(91, 103, 112, 0.24));
+$elevation2: drop-shadow(0px 4px 8px rgba(91, 103, 112, 0.24));
+$elevation3: drop-shadow(0px 4px 12px rgba(91, 103, 112, 0.24));
+$elevation4: drop-shadow(0px 4px 20px rgba(91, 103, 112, 0.24));
+$elevation5: drop-shadow(0px 4px 48px rgba(91, 103, 112, 0.24));
 
-    .doc-form__title {
-        margin-top: 32px;
+$sm: 8px;
+$md: 16px;
+$lg: 24px;
+$xlg: 32px;
+$xxlg: 64px;
+$xxxlg: 128px;
+
+$spec: 2.5px solid $cfa-red;
+
+.form__container {
+    width: 100%;
+    padding: 32px;
+
+    .form__content {
+        background: $cfa-white;
+        padding: $md;
+        border-radius: $md;
+        border: $cfa-border;
+        filter: $elevation5;
+
+        .form__field__container {
+            width: 50%;
+            .form__section {
+                display: flex;
+                margin: $md 0;
+
+                .form__input {
+                    width: 100%;
+                    margin-right: $md;
+                }
+
+                .form__btn {
+                    background: none;
+                    border: none;
+                    font-size: $xxlg;
+                    font-weight: 400;
+                    color: $cfa-red;
+                    padding: 0;
+                    cursor: pointer;
+                }
+            }
+
+            .form__submit__btn {
+                margin-top: $lg;
+            }
+        }
     }
-
-    .variant__types {
-        margin: 32px 0;
-    }
-    
-    .doc-fields__container {
-        width: 650px;
-    
-        .doc-form__prop-item {
-            display: flex;
-            align-items: flex-end;
-        }
-    
-        .input__form {
-            margin-top: 16px;
-            margin-right: 16px;
-        }
-    
-        .doc-form__btn {
-            padding: 12px 24px;
-        }
-    
-        .form-btn {
-            align-self: flex-end;
-            margin-top: 16px;
-        }
-    
-    } 
 }
